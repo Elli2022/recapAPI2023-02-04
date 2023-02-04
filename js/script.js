@@ -1,19 +1,19 @@
-// const url = `https://dog.ceo/api/breeds/image/random`;
+const url = `https://dog.ceo/api/breeds/image/random`;
 
-// fetch(url)
-//     .then(response => {
-//         console.log(response);
-//         return response.json();
-//     })
-//     .then(data => {
-//         console.log(data.message);
-//         const img = document.createElement("img");
-//         document.body.append(img);
-//         img.src = data.message;
+fetch(url)
+    .then(response => {
+        console.log(response);
+        return response.json();
+    })
+    .then(data => {
+        console.log(data.message);
+        const img = document.createElement("img");
+        document.body.append(img);
+        img.src = data.message;
 
 
-//     })
-//     .catch(error => console.log(error));
+    })
+    .catch(error => console.log(error));
 
 
 
